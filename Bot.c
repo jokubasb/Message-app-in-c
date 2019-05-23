@@ -36,7 +36,7 @@ void botas(){
         char buffer[64] = {0};
         sprintf(buffer, "Timestamp: %d\n",(int)time(NULL));
         send(networkSocket, buffer, sizeof(buffer), 0);
-        usleep(1000);
+        sleep(1);
     }
 }
 
